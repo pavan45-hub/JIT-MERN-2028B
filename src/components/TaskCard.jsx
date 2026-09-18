@@ -1,4 +1,6 @@
 
+import { Link } from "react-router-dom";
+
 function TaskCard(props) {
 
     return (
@@ -16,6 +18,8 @@ function TaskCard(props) {
                 <strong>Status:</strong>{" "}
                 {props.status}
             </p>
+
+            <Link to={`/tasks/${props.id}`}>View Details</Link>
 
 
             {/* CHANGE STATUS */}
